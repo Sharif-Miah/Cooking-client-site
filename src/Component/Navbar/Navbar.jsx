@@ -1,5 +1,6 @@
 import React from "react";
 import {GiCampCookingPot} from 'react-icons/gi'
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -40,7 +41,7 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl"><GiCampCookingPot/></a>
+          <Link to='/' className="btn btn-ghost normal-case text-xl"><GiCampCookingPot/></Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -66,13 +67,6 @@ const Navbar = () => {
         </div>
       </label>
       <ul tabIndex={0} className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
-        <li>
-          <a className="justify-between">
-            Profile
-            <span className="badge">New</span>
-          </a>
-        </li>
-        <li><a>Settings</a></li>
         <li><a>Logout</a></li>
       </ul>
     </div>
